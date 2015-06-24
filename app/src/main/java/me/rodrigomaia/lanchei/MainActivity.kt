@@ -1,13 +1,14 @@
 package me.rodrigomaia.lanchei
 
+import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.ActionBarActivity
 import android.view.Menu
 import android.view.MenuItem
 import org.jetbrains.anko.*
 
 
-public class MainActivity : ActionBarActivity() {
+public class MainActivity : Activity() {
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ public class MainActivity : ActionBarActivity() {
 //        setContentView(R.layout.activity_main)
         verticalLayout {
             val name = editText()
-            button("Hello World!"){
+            button("Hello Rodrigo!"){
                 onClick { toast("testando ne")}
             }
         }
